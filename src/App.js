@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import html2canvas from 'html2canvas';
+import './App.css'; // Import the CSS file
 
 const initialMatches = [
   { id: 1, team1: 'Senshi eSports', team2: '24/7 Tower Dive', winner: null },
@@ -76,14 +77,15 @@ const MatchTracker = () => {
   };
 
   return (
-    <div className="p-4">
-      <h2 className="text-2xl font-bold mb-4">Build your final standings</h2>
+    <div className="p-4 match-tracker-container">
+      <h2 className="text-2xl font-bold mb-4">Make your final standing</h2>
+      <p>Disclaimer: Tiebreakers and HeadToHead are not build in</p>
       <div className="grid grid-cols-2 gap-4">
         <div>
           <h3 className="text-xl font-semibold mb-2">Matches</h3>
           {matches.map((match) => (
-            <div key={match.id} className="mb-4 p-2 border rounded">
-              <p>{match.team1} vs {match.team2}</p>
+            <div key={match.id} className="mb-4 p-2 border rounded match-card">
+              <p className="match-info">{match.team1} vs {match.team2}</p>
               <div className="mt-2">
                 <label className="mr-2">
                   <input
@@ -116,7 +118,7 @@ const MatchTracker = () => {
         </div>
         <div>
           <h3 className="text-xl font-semibold mb-2">Standings</h3>
-          <table id="standings-table" className="w-full">
+          <table id="standings-table" className="standings-table">
             <thead>
               <tr>
                 <th className="text-left">Team</th>
@@ -137,7 +139,7 @@ const MatchTracker = () => {
           {allMatchesSubmitted && (
             <button
               onClick={downloadStandings}
-              className="mt-4 px-4 py-2 bg-green-500 text-white rounded"
+              className="mt-4 px-4 py-2 bg-green-500 text-white rounded download-button"
             >
               Download Standings
             </button>
