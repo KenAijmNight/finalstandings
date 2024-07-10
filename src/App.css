@@ -5,6 +5,20 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+.stream-links {
+  font-size: 1rem;
+  color: #333;
+}
+
+.stream-links a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.stream-links a:hover {
+  text-decoration: underline;
+}
+
 .match-card {
   background-color: #ffffff;
   border: 1px solid #ddd;
@@ -16,6 +30,11 @@
 .match-info {
   font-weight: bold;
   color: #333;
+}
+
+.match-time {
+  color: #666;
+  font-size: 0.9rem;
 }
 
 .standings-table {
