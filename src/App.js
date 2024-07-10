@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import html2canvas from 'html2canvas';
 import './App.css'; // Import the CSS file
-import { Analytics } from "@vercel/analytics/react"
+
 
 const initialMatches = [
   { id: 1, team1: 'Senshi eSports', team2: '24/7 Tower Dive', date: '2024-07-10', time: '19:00', winner: null },
@@ -123,7 +123,6 @@ const MatchTracker = () => {
 
   return (
     <div className="p-4 match-tracker-container">
-      <Analytics />
       <div className="stream-links mb-4">
         <p>Watch the matches live:</p>
         <p>French Stream: <a href="https://www.twitch.tv/ouat_tv" target="_blank" rel="noopener noreferrer">https://www.twitch.tv/ouat_tv</a></p>
