@@ -80,6 +80,7 @@ const MatchTracker = () => {
     <div className="p-4 match-tracker-container">
       <h2 className="text-2xl font-bold mb-4">Make your final standing</h2>
       <p>Disclaimer: Tiebreakers and HeadToHead are not build in</p>
+      <p>When you filled in all the standing can be downloaded</p>
       <div className="grid grid-cols-2 gap-4">
         <div>
           <h3 className="text-xl font-semibold mb-2">Matches</h3>
