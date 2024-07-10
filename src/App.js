@@ -123,6 +123,7 @@ const MatchTracker = () => {
 
   return (
     <div className="p-4 match-tracker-container">
+      <h1 className="text-3xl font-bold mb-4">Elite Series 2nd Division 2024 Summer Split</h1>
       <div className="stream-links mb-4">
         <p>Watch the matches live:</p>
         <p>French Stream: <a href="https://www.twitch.tv/ouat_tv" target="_blank" rel="noopener noreferrer">https://www.twitch.tv/ouat_tv</a></p>
