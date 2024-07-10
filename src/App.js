@@ -131,17 +131,6 @@ const MatchTracker = () => {
       </div>
       <h2 className="text-2xl font-bold mb-4">Make your final standing</h2>
       <p>Disclaimer: Tiebreakers and HeadToHead are not build in</p>
-      <p>When you filled in all the standing can be downloaded</p>
-      <div className="grid grid-cols-2 gap-4">
-        <div>
-        <h3 className="text-xl font-semibold mb-2">Matches on {formatDate('2024-07-10')}</h3>
-          {renderMatchesForDate('2024-07-10')}
-        </div>
-        <div>
-        <h3 className="text-xl font-semibold mb-2">Matches on {formatDate('2024-07-12')}</h3>
-          {renderMatchesForDate('2024-07-12')}
-        </div>
-      </div>
       <div className="mt-4">
         <h3 className="text-xl font-semibold mb-2">Standings</h3>
         <table id="standings-table" className="w-full standings-table">
@@ -171,6 +160,14 @@ const MatchTracker = () => {
           </button>
         )}
       </div>
+      <p>When you filled in all the standing can be downloaded</p>
+      <div className="grid grid-cols-2 gap-4">
+        <h3 className="text-xl font-semibold mb-2">Matches on {formatDate('2024-07-10')}</h3>
+          {renderMatchesForDate('2024-07-10')}
+        <h3 className="text-xl font-semibold mb-2">Matches on {formatDate('2024-07-12')}</h3>
+          {renderMatchesForDate('2024-07-12')}
+      </div>
+      
     </div>
   );
 };
