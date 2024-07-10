@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import html2canvas from 'html2canvas';
 import './App.css'; // Import the CSS file
+import { Analytics } from "@vercel/analytics/react"
 
 const initialMatches = [
   { id: 1, team1: 'Senshi eSports', team2: '24/7 Tower Dive', winner: null },
@@ -77,7 +78,9 @@ const MatchTracker = () => {
   };
 
   return (
+    
     <div className="p-4 match-tracker-container">
+      <Analytics />
       <h2 className="text-2xl font-bold mb-4">Make your final standing</h2>
       <p>Disclaimer: Tiebreakers and HeadToHead are not build in</p>
       <p>When you filled in all the standing can be downloaded</p>
