@@ -12,8 +12,8 @@ const initialMatches = [
 
 const initialStandings = [
   { team: 'Jörmungang', wins: 10, losses: 3 },
-  { team: 'Dutch Community Team', wins: 8, losses: 5 },
   { team: 'Pertinax Esports', wins: 9, losses: 4 },
+  { team: 'Dutch Community Team', wins: 8, losses: 5 },
   { team: 'Senshi eSports', wins: 8, losses: 5 },
   { team: '24/7 Tower Dive', wins: 6, losses: 7 },
   { team: 'Aurora', wins: 5, losses: 8 },
