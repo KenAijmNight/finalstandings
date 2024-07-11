@@ -4,25 +4,21 @@ import './App.css'; // Import the CSS file
 
 
 const initialMatches = [
-  { id: 1, team1: 'Senshi eSports', team2: '24/7 Tower Dive', date: '2024-07-10', time: '19:00', winner: null },
-  { id: 2, team1: 'Aurora', team2: 'Mind Blue eSports', date: '2024-07-10', time: '20:00', winner: null },
-  { id: 3, team1: 'Jörmungang', team2: 'Meow Gaming Club', date: '2024-07-10', time: '21:00', winner: null },
-  { id: 4, team1: 'Dutch Community Team', team2: 'Pertinax Esports', date: '2024-07-10', time: '22:00', winner: null },
-  { id: 5, team1: 'Pertinax Esports', team2: 'Meow Gaming Club', date: '2024-07-12', time: '19:00', winner: null },
-  { id: 6, team1: 'Jörmungang', team2: 'Mind Blue eSports', date: '2024-07-12', time: '20:00', winner: null },
-  { id: 7, team1: '24/7 Tower Dive', team2: 'Aurora', date: '2024-07-12', time: '21:00', winner: null },
-  { id: 8, team1: 'Dutch Community Team', team2: 'Senshi eSports', date: '2024-07-12', time: '22:00', winner: null },
+  { id: 1, team1: 'Pertinax Esports', team2: 'Meow Gaming Club', date: '2024-07-12', time: '19:00', winner: null },
+  { id: 2, team1: 'Jörmungang', team2: 'Mind Blue eSports', date: '2024-07-12', time: '20:00', winner: null },
+  { id: 3, team1: '24/7 Tower Dive', team2: 'Aurora', date: '2024-07-12', time: '21:00', winner: null },
+  { id: 4, team1: 'Dutch Community Team', team2: 'Senshi eSports', date: '2024-07-12', time: '22:00', winner: null },
 ];
 
 const initialStandings = [
-  { team: 'Jörmungang', wins: 9, losses: 3 },
-  { team: 'Dutch Community Team', wins: 8, losses: 4 },
-  { team: 'Pertinax Esports', wins: 8, losses: 4 },
-  { team: 'Senshi eSports', wins: 8, losses: 4 },
-  { team: '24/7 Tower Dive', wins: 5, losses: 7 },
-  { team: 'Aurora', wins: 4, losses: 8 },
-  { team: 'Meow Gaming Club', wins: 4, losses: 8 },
-  { team: 'Mind Blue eSports', wins: 2, losses: 10 },
+  { team: 'Jörmungang', wins: 10, losses: 3 },
+  { team: 'Dutch Community Team', wins: 8, losses: 5 },
+  { team: 'Pertinax Esports', wins: 9, losses: 4 },
+  { team: 'Senshi eSports', wins: 8, losses: 5 },
+  { team: '24/7 Tower Dive', wins: 6, losses: 7 },
+  { team: 'Aurora', wins: 5, losses: 8 },
+  { team: 'Meow Gaming Club', wins: 4, losses: 9 },
+  { team: 'Mind Blue eSports', wins: 2, losses: 11 },
 ];
 
 const MatchTracker = () => {
@@ -162,8 +158,6 @@ const MatchTracker = () => {
       </div>
       <p>When you filled in all the standing can be downloaded</p>
       <div className="grid grid-cols-2 gap-4">
-        <h3 className="text-xl font-semibold mb-2">Matches on {formatDate('2024-07-10')}</h3>
-          {renderMatchesForDate('2024-07-10')}
         <h3 className="text-xl font-semibold mb-2">Matches on {formatDate('2024-07-12')}</h3>
           {renderMatchesForDate('2024-07-12')}
       </div>
